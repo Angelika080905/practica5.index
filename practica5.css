@@ -1,5 +1,12 @@
+header{
+
+}
+.logo{
+    padding: 0 242px;
+}
 nav{
-    border-top: 2px solid rgb(182, 177, 177) ;    
+    padding: 0px 256px  ;
+    border-top:0.5px solid rgb(182, 177, 177) ;    
     display:flex;
     justify-content: flex-end;
 }
@@ -22,14 +29,26 @@ h1{
     
     display: grid;
     /* definimos el numero de columnas*/
-    grid-template-columns: 148px 148px 483px;
-    grid-template-rows: 48px 42px 109px 42px;
+    grid-template-columns: 148px 148px 500px;
+    grid-template-rows: 48px 42px 61px 61PX  42px;
     justify-items: center;
     align-items: center;
     align-content: center;
     font-family:apple-system,sans-serif;
     
     
+
+}
+.X1::before{
+    content:"";
+    background-image:url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left:60px;
+    top:-10px;
+    width: 50px;
+    height: 100px;
+
 
 }
 .X1{
@@ -39,6 +58,8 @@ h1{
     grid-row:2/3;
     justify-self: left;
     align-self: flex-end;
+    position: relative;
+    padding-left: 100px;
    
 } 
 .X2{
@@ -53,15 +74,20 @@ h1{
     font-size: 62px;
     grid-column: 3/4;
     grid-row:3/4;
-    
-
+    justify-self:start;
 }
-    
-.X4{
-    font-size: 27;
-    grid-column:3/4 ;
-    grid-row:4/5;
+ .X4{
+    font-size: 62px;
+    grid-column: 3/4;
+    grid-row: 4/5;
     justify-self: start;
+ }   
+.X5{
+    font-size:38px;
+    grid-column:3/4 ;
+    grid-row:5/6;
+    justify-self: start;
+    
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
 }
 h2{
@@ -78,6 +104,7 @@ p{
     background-image:url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
   
  }
 
